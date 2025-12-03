@@ -1,4 +1,6 @@
 import { Avatar, Box, IconButton, Typography } from "@mui/material";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { MdEdit } from "react-icons/md";
 
 function Navbar() {
   return (
@@ -28,14 +30,19 @@ function Navbar() {
             gap: { xs: 1, sm: 2 },
           }}
         >
-          <IconButton size="small" sx={{ color: "#fff", fontSize:{xs:'8px',sm:'9px'} }}>Back</IconButton>
+          <IconButton size="small" sx={{ color: "#fff", fontSize:{xs:'8px',sm:'9px'} }}>
+            <FaArrowLeftLong size={14} />
+          </IconButton>
           <Typography
             fontSize={{ xs: 14, sm: 16 }}
             sx={{ color: "#fff" }}
           >
             Media Management
           </Typography>
-          <IconButton size="small" sx={{ color: "#fff", fontSize:{xs:'8px',sm:'9px'}}}>Edit</IconButton>
+          <IconButton size="small" sx={{ color: "#fff", fontSize:{xs:'8px',sm:'9px'}}}>
+            <MdEdit size={14} />
+
+          </IconButton>
         </Box>
 
         <Typography
@@ -51,11 +58,14 @@ function Navbar() {
         sx={{
           display: "flex",
           alignItems: "center",
+
           gap: 2,
           flexShrink: 0,
         }}
       >
-        <Box sx={{ textAlign: "right" }}>
+        <Box sx={{ textAlign: "right",          display: "flex",
+          alignItems: "center",justifyContent:'center',flexDirection:'column',
+ }}>
           <IconButton size="small" sx={{ color: "#fff", fontSize: "11px" ,display:{xs:'none',sm:'inline-block'}}}>
             Jane Cooper
           </IconButton>
