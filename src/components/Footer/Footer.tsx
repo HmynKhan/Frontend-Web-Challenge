@@ -1,6 +1,6 @@
 import { Box, Button } from '@mui/material'
  
-function Footer() {
+function Footer() { 
   return (
 
       <Box sx={{ display: 'flex', justifyContent: 'space-between', mt: 1 }}>
